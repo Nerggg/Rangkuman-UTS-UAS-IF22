@@ -12,6 +12,9 @@ Rangkuman UAS
 
 # Main Note
 
+## Callee save dan caller save
+simpelnya tuh, callee save itu register yg diperserve sama pemanggil fungsi (callee) jadi setelah function call yg menggunakan register itu berakhir, nilai dari register di restore lagi ke semula sama callee. sementara caller save register itu register yg diperserve sama caller jadi nilainya bakal berubah di dalam function call
+
 ## Cara ngakses array di assembly
 misal val[5] = {1,5,2,1,3}  
 val[4] = 3  
@@ -78,13 +81,9 @@ cara kerja canary tuh kan kalau kita mau ngereplace return address pasti bakal l
 
 kalo diliat dari soal tahun lalu, materi yg penting itu cuman assembly (terutama buffer overflow) dan cache (terutama cara ngakses yg hit n miss itu) doang  
 
-## Materi Assembly
-1. [cara ngakses array di assembly](#cara-ngakses-array-di-assembly)
-1. [cara ngakses struct di assembly](#cara-ngakses-struct-di-assembly)
-
 # Pertanyaan
 
-1. apa itu caller save dan callee save (kayanya ga masuk)
+1. [apa itu caller save dan callee save](#callee-save-dan-caller-save)
 2. [bagaimana cara ngakses array di assembly](#cara-ngakses-array-di-assembly)
 2. [bagaimana cara ngakses union di assembly](#cara-ngakses-array-di-assembly)
 3. [gimana susunan stack pas buffer overflow](#buffer-overflow)
