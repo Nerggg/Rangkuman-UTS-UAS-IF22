@@ -56,6 +56,20 @@ Rangkuman UAS
     - pokoknya dia tuh bakal selalu **parameter kiri <- parameter kanan**, jadi kalau misalnya dia compare dan dua2nya tuh **isi dari parameter kanan**, maka dia fail
 3. Tips random utk soal klausa klausa  
     - misal ada **a are b** jadinya dia tuh dibuat **a -> b** BUKAN a and b
+4. Teori ttg Logika  
+    - substitution  
+        ada dua, pure sama impure. pure itu variabelnya lain semua, kalo impure variabelnya ada yg sama  
+        substitution dilambangkan dgn sigma, ekspresi dilambangkan dengan phi, hasilnya tuh dlm bentuk phi sigma    
+    - composition of substitution  
+        composition nya dilambangkan dgn sigma dan substitution dilambangkan dgn taw  
+        purity dari composition ga mempengaruhi purity akhir dari compositionnya
+    - pattern matching  
+        misal ada p(x,y), dia itu match sama p(a,b) karena ada matcher yg memungkinkan dia untuk sama yaitu sigma = {x <- a, y <- b}  
+    - unification  
+        ada ekspresi a dan b, maka unifier itu adalah substitusi sigma yg memenuhi a sigma = b sigma
+    - unifier generality  
+        sigma itu lebih general atau sama generalnya dgn taw jika ada substitutsi gamma yg memenuhi taw = sigma * gamma
+    - composability
 
 # Kesimpulan
 
